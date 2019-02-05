@@ -27,6 +27,31 @@
     
   </head>
   <body>
+  	<div id="full-page-quiz" class="full-page-quiz">
+  		<div class="heading jumbotron">
+        	<h1>I want to..</h1>
+        </div>
+        <center>
+        <div class="card-deck col-md-6">
+		  <div id="project" class="card" onclick="show_form(this)">
+		    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+		    <div class="card-body">
+		      <center><h5 class="card-title">Start a Project</h5></center>
+		      <p class="card-text">If you have already thought of a solution to some problem or had an amazing idea which you want to implement</p>
+		      <p class="card-text"><small class="text-muted">Don't worry! There are enough members to help you if you get stuck.</small></p>
+		    </div>
+		  </div>
+		  <div id="idea" class="card" onclick="show_form(this)">
+		    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+		    <div class="card-body">
+		      <center><h5 class="card-title">Give an Idea</h5></center>
+		      <p class="card-text">If you have come accross a problem or had an amazing idea about something but you don't really want to work on it</p>
+		      <p class="card-text"><small class="text-muted">Don't worry! You will be given idea credits and also you can join later if you change your mind.</small></p>
+		    </div>
+		  </div>
+		</center>
+		</div>
+  	</div>
   
   <div class="site-wrap">
 
@@ -80,14 +105,15 @@
       </div>
     </div>
 
-    
+
     
 
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
-       
-          <div class="col-md-12 col-lg-8 mb-5">
+       		
+       	<!-- Open Project Submission -->
+          <div id="project-form" class="col-md-12 col-lg-8 mb-5">
           
             
           
@@ -163,6 +189,31 @@
   
             </form>
           </div>
+          <!-- Close Project Submission -->
+
+          <!-- Open Idea Submission -->
+          <div id="idea-form" class="col-md-12 col-lg-8 mb-5">            
+          
+            <form action="https://formspree.io/oss.openstudentsociety@gmail.com" method="post" class="p-5 bg-white">
+
+              <div class="row form-group mb-5">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="fullname">Idea</label>
+                  <textarea type="text" id="fullname" name="idea" class="form-control" placeholder="eg. Want to build my 42nd Titanium armor suit "></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Submit" class="btn btn-primary  py-2 px-5">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          
+          <!-- Close Idea Submission -->
 
           <div class="col-lg-4">
           	<div class="p-4 mb-3 bg-white">
@@ -313,6 +364,26 @@
     <!--End Footer-->
   </div>
 
+  <script type="text/javascript">
+  	var opacity=0;
+  	function show_form(obj) {
+  		var body = document.getElementsByTagName("body")[0];
+  		body.setAttribute("style", "overflow-y: visible;");
+
+  		var vic = document.getElementById(obj.id + "-form");
+		vic.style.display = "block";
+		MyFadeFunction();
+		var element = document. getElementById('full-page-quiz');
+		element. parentNode. removeChild(element);
+  	}
+  	function MyFadeFunction() {
+	   if (opacity<=1) {
+	      opacity -= .033;
+	      setTimeout(function(){MyFadeFunction()},100);
+	   }
+	   document.getElementById('full-page-quiz').style.opacity = opacity;
+	}
+  </script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>

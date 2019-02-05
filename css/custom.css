@@ -1,3 +1,7 @@
+body {
+	overflow-y: hidden;
+}
+
 .event-card{
 	padding-top: 1%;
 	border: 1px solid green;
@@ -10,3 +14,45 @@
 .footer-color{
 	background: teal !important;
 }
+
+
+/************** New Post Elements ***************/
+.full-page-quiz {
+	height: 100%;
+  	width: 100%;
+  	position: fixed;
+  	z-index: 10;
+  	top: 0;
+  	left: 0;
+  	background-color: white;
+  	overflow-y: hidden;
+  	transition: 0.5s;
+  	color: black;
+}
+
+.heading.jumbotron {
+	text-align: center;
+	background: skyblue;
+	color: white;
+}
+
+.card-deck {
+	text-align: left;
+}
+
+#project-form, #idea-form {
+	display: none;
+}
+
+.card {
+	transition: transform .2s; /* Animation */
+}
+
+.card:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/************** New Post Elements ***************/
+
+
+
