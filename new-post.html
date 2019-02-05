@@ -24,7 +24,11 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    
+    <style type="text/css">
+    	body {
+			overflow-y: hidden;
+		}
+    </style>
   </head>
   <body>
   	<div id="full-page-quiz" class="full-page-quiz">
@@ -373,8 +377,8 @@
   		var vic = document.getElementById(obj.id + "-form");
 		vic.style.display = "block";
 		MyFadeFunction();
-		var element = document. getElementById('full-page-quiz');
-		element. parentNode. removeChild(element);
+		var element = document.getElementById('full-page-quiz');
+		element.parentNode.removeChild(element);
   	}
   	function MyFadeFunction() {
 	   if (opacity<=1) {
