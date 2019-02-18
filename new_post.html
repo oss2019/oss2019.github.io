@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Project &mdash; An idea to get started</title>
+    <title>OSS &mdash; IIT Dharwad</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -24,38 +24,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    <style type="text/css">
-    	body {
-			overflow-y: hidden;
-		}
-    </style>
+    
   </head>
   <body>
-  	<div id="full-page-quiz" class="full-page-quiz">
-  		<div class="heading jumbotron">
-        	<h1>I want to..</h1>
-        </div>
-        <center>
-        <div class="card-deck col-md-6">
-		  <div id="project" class="card" onclick="show_form(this)">
-		    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-		    <div class="card-body">
-		      <center><h5 class="card-title">Start a Project</h5></center>
-		      <p class="card-text">If you have already thought of a solution to some problem or had an amazing idea which you want to implement</p>
-		      <p class="card-text"><small class="text-muted">Don't worry! There are enough members to help you if you get stuck.</small></p>
-		    </div>
-		  </div>
-		  <div id="idea" class="card" onclick="show_form(this)">
-		    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-		    <div class="card-body">
-		      <center><h5 class="card-title">Give an Idea</h5></center>
-		      <p class="card-text">If you have come accross a problem or had an amazing idea about something but you don't really want to work on it</p>
-		      <p class="card-text"><small class="text-muted">Don't worry! You will be given idea credits and also you can join later if you change your mind.</small></p>
-		    </div>
-		  </div>
-		</center>
-		</div>
-  	</div>
   
   <div class="site-wrap">
 
@@ -83,11 +54,11 @@
             <nav class="site-navigation text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="team.html">Team</a></li>
-                <!-- <li><a href="new-post.html"><span class="rounded bg-primary py-2 px-3 text-white"><span class="h5 mr-2">+</span>Propose an Idea </span></a></li> -->
+                <li><a href="new_post.html"><span class="rounded bg-primary py-2 px-3 text-white"><span class="h5 mr-2">+</span>Propose an Idea </span></a></li>
               </ul>
             </nav>
           </div>
@@ -101,8 +72,31 @@
         </div>
       </div>
       
-    </header>
-
+    </header><div id="full-page-quiz" class="full-page-quiz">
+      <div class="heading jumbotron">
+          <h1>I want to..</h1>
+      </div>
+      <center>
+        <div class="card-deck col-md-6">
+        <div id="project" class="card" onclick="show_form(this)">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <center><h5 class="card-title">Start a Project</h5></center>
+            <p class="card-text">If you have already thought of a solution to some problem or had an amazing idea which you want to implement</p>
+            <p class="card-text"><small class="text-muted">Don't worry! There are enough members to help you if you get stuck.</small></p>
+          </div>
+        </div>
+        <div id="idea" class="card" onclick="show_form(this)">
+          <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+          <div class="card-body">
+            <center><h5 class="card-title">Give an Idea</h5></center>
+            <p class="card-text">If you have come accross a problem or had an amazing idea about something but you don't really want to work on it</p>
+            <p class="card-text"><small class="text-muted">Don't worry! You will be given idea credits and also you can join later if you change your mind.</small></p>
+          </div>
+        </div>
+      </center>
+    </div>
+    
     <div class="unit-5 overlay" style="background-image: url('images/grid-bluecut.jpg');">
       <div class="container text-center">
         <h2 class="mb-0">Submit An Idea</h2>
@@ -115,8 +109,8 @@
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
-       		
-       	<!-- Open Project Submission -->
+          
+        <!-- Open Project Submission -->
           <div id="project-form" class="col-md-12 col-lg-8 mb-5">
           
             
@@ -220,11 +214,11 @@
           <!-- Close Idea Submission -->
 
           <div class="col-lg-4">
-          	<div class="p-4 mb-3 bg-white">
+            <div class="p-4 mb-3 bg-white">
               <h3 class="h5 text-black mb-3">How to fill this form?</h3>
               <p>This is a very serious form through which you have to pitch your idea. After your idea is intensively reviewed by a panel of professors, high court judges and the PMO, they <strong>may</strong> accept your idea. </p>
               <p>
-              	Just kidding, you just need to know your stuff (or at least be serious and try to know it) and we'll be thrilled to approach you.
+                Just kidding, you just need to know your stuff (or at least be serious and try to know it) and we'll be thrilled to approach you.
               </p>
               <!-- <p><a href="#" class="btn btn-primary  py-2 px-4">Learn More</a></p> -->
             </div>
@@ -257,7 +251,7 @@
           <div class="col-md-8">
             <div class="accordion unit-8" id="accordion">
 
-        	<div class="accordion-item">
+          <div class="accordion-item">
               <h3 class="mb-0 heading">
                 <a class="btn-block" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Is there any discipline/year restriction on starting a new project?  <span class="icon"></span></a>
               </h3>
@@ -306,10 +300,7 @@
         </div>
       
       </div>
-    </div>
-
-
-    <!--Start Footer-->
+    </div><!--Start Footer-->
     <footer class="site-footer unit-5 overlay footer-color">
       <div class="container">
         
@@ -323,16 +314,34 @@
               <div class="col-6 col-md-3 col-lg-3 mb-5 mb-lg-0">
               </div>
               <div class="col-6 col-md-3 col-lg-3 mb-5 mb-lg-0">
-                <h3 class="footer-heading mb-4">Quick Links</h3>
-                <ul class="list-unstyled">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="blog.html">About</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="codeofconduct.html">Code of Conduct</a></li>
-                </ul>
+                
+                <div class="text-center">
+                  <h3 class="footer-heading mb-4">Quick Links</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="codeofconduct.html">Terms &amp; Policies</a></li>
+                  </ul>
+                </div>
+                <div class="text-center">
+                  <h3 class="footer-heading mb-4">Follow Us</h3>
+                  <span class="unit-3-icon icon" style="margin-left: 5%" >
+                    <a href="https://www.facebook.com/OSS-Open-Student-Society-390468168410308/">
+                      <img src="images/facebook.png" style="max-width: 20px">
+                    </a>
+                  </span>
+                  <span class="unit-3-icon icon" style="margin-left: 5%" >
+                    <a href="https://www.linkedin.com/company/oss2019">
+                      <img src="images/linkedin.png" style="max-width: 20px">
+                    </a>
+                  </span>
+                </div>
+
               </div>
             </div>
           </div>
+
           <div class="col-lg-3">
             <h3 class="footer-heading mb-4">Contact Info</h3>
             <ul class="list-unstyled">
@@ -368,26 +377,7 @@
     <!--End Footer-->
   </div>
 
-  <script type="text/javascript">
-  	var opacity=0;
-  	function show_form(obj) {
-  		var body = document.getElementsByTagName("body")[0];
-  		body.setAttribute("style", "overflow-y: visible;");
-
-  		var vic = document.getElementById(obj.id + "-form");
-		vic.style.display = "block";
-		MyFadeFunction();
-		var element = document.getElementById('full-page-quiz');
-		element.parentNode.removeChild(element);
-  	}
-  	function MyFadeFunction() {
-	   if (opacity<=1) {
-	      opacity -= .033;
-	      setTimeout(function(){MyFadeFunction()},100);
-	   }
-	   document.getElementById('full-page-quiz').style.opacity = opacity;
-	}
-  </script>
+  <script src="js/custom.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
