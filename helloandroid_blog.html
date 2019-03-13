@@ -305,8 +305,38 @@
 <p>You can follow this video for Linux installation: 
 <a href="https://developer.android.com/studio/videos/studio-install-mac.mp4">Video Link</a></p>
 
+      <!-- Linux -->
+      <h1 id="installationonlinuxplatform">Installation on Linux Platform</h1>
 
-              <!--End Content here-->
+      <h2 id="toinstallandroidstudioonlinuxproceedasfollows">To install Android Studio on Linux, proceed as follows:</h2>
+
+      <ol>
+      <li>Unpack the <code>.zip</code> file you downloaded to an appropriate location for your applications, such as within <code>/usr/local/</code> for your user profile, or <code>/opt/</code> for shared users.</li>
+
+      <li>To launch Android Studio, open a terminal, navigate to the <code>android-studio/bin/</code> directory, and execute <code>studio.sh</code>.</li>
+
+      <li>Select whether you want to import previous Android Studio settings or not, then click OK.</li>
+
+      <li>The Android Studio Setup Wizard guides you through the rest of the setup, which includes downloading Android SDK components that are required for development.
+      Further steps are similar to <strong>Windows Installation</strong> and can be found <a href="https://github.com/oss2019/HelloAndroid/blob/master/Android%20Studio%20Installation%20-%20Windows.md">here</a>.</li>
+      </ol>
+
+      <h3 id="requiredlibrariesfor64bitmachines">Required libraries for 64-bit machines:</h3>
+
+      <p>If you are running a 64-bit version of Ubuntu, you need to install some 32-bit libraries with the following command:</p>
+
+      <p><code>sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386</code></p>
+
+      <p>If you are running 64-bit Fedora, the command is:</p>
+
+      <p><code>sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686</code></p>
+
+      <h3 id="videotutorial">Video Tutorial</h3>
+
+      <p>You can follow this video for Linux installation:
+      <a href="https://developer.android.com/studio/videos/studio-install-linux.mp4">Video Link</a></p>
+      <!-- End Linux -->
+      <!--End Content here-->
             </div>
 
           </div>
