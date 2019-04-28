@@ -1,0 +1,14 @@
+============ Template to Push ============
+
+1) Get a 512x512 px image which you want to use for your repo and place it in "images/SoC assets/"
+2) Mentors: All the list of mentors for this project (with links to their GitHub profile)
+3) Name: The name of your project
+4) Tagline: A sassy tagline of not more than 15 words
+5) Estimated Time in weeks
+
+6) Does your project needs to be completed in IIT Dharwad itself?
+7) A small description of your project
+8) The motivation for choosing this project (in points)
+9) Features expected (in points)
+10) Planned schedule, in weeks. If not yet prepared, leave it blank.
+11) Link to repo
