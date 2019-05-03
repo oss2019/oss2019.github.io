@@ -1,6 +1,12 @@
-.event-card{
-	padding-top: 1%;
-	border: 1px solid green;
+.event-card { 
+    padding: 5px;
+    padding-top: 1%;
+}
+
+.event-card > div {
+    border: 1px solid green;
+    padding: 5px;
+    height: 100%;
 }
 
 .member-name{
