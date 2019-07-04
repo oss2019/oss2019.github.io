@@ -1589,3 +1589,14 @@ a {
       padding-top: 0;
     }
   }
+
+@media (max-width: 900px) {
+  .banner {
+    background-size: contain !important;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    padding-top: 0;
+  }
+}
