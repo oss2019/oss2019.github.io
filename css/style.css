@@ -493,7 +493,19 @@ a {
 .site-blocks-cover {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top; }
+  background-position: top;
+}
+@media (max-width: 500px) {
+  .site-blocks-cover h1 {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 410px) {
+  .site-blocks-cover h1 {
+    font-size: 1.5rem !important;
+  }
+}
+
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
@@ -504,9 +516,27 @@ a {
       right: 0;
       top: 0;
       background: rgba(0, 0, 0, 0.4); }
+
   .site-blocks-cover, .site-blocks-cover .row-custom {
     min-height: 600px;
     height: calc(100vh); }
+    @media (max-width: 600px) {
+      .site-blocks-cover {
+        background-size: 100% 100% !important;
+      }
+      .site-blocks-cover, .site-blocks-cover .row-custom {
+        min-height: unset;
+        height: calc(55vh); }
+    }
+    /* for iphone x */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .site-blocks-cover, .site-blocks-cover .row-custom {
+        min-height: unset;
+        height: calc(45vh); }
+    }
   .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row-custom {
     min-height: 600px;
     height: calc(80vh); }
@@ -1521,3 +1551,14 @@ a {
   .top-destination .place p {
     font-size: 13px;
     color: #ccc; }
+
+@media (max-width: 900px) {
+  .banner {
+    background-size: contain !important;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    padding-top: 0;
+  }
+}
