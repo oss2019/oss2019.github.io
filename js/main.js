@@ -262,3 +262,20 @@ jQuery(document).ready(function($) {
 	siteDatePicker();
 
 });
+
+// scroll function for bottom to up button on footer
+
+var upArrow = $('.footer-up-btn');
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 300) {
+        upArrow.fadeIn();
+      } else {
+        upArrow.fadeOut();
+      }
+  });
+  upArrow.click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+  });
+});
