@@ -1551,14 +1551,41 @@ a {
   .top-destination .place p {
     font-size: 13px;
     color: #ccc; }
+  
+  .footer-up-btn {
+    z-index: 999;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+  .footer-up-btn {
+    display: none;
+  }
+  .footer-up-btn>div:hover {
+    background: #1e88e5;
+    transition: all .3s;
+  }
+  .footer-up-btn>div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: #26baee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-up-btn img {
+    width: 20px;
+  }
 
-@media (max-width: 900px) {
-  .banner {
-    background-size: contain !important;
+  @media (max-width: 900px) {
+    .banner {
+      background-size: contain !important;
+    }
   }
-}
-@media (max-width: 600px) {
-  .banner {
-    padding-top: 0;
+  @media (max-width: 600px) {
+    .banner {
+      padding-top: 0;
+    }
   }
-}
