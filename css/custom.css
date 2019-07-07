@@ -22,7 +22,6 @@
 .full-page-quiz {
 	height: 100%;
   	width: 100%;
-  	position: fixed;
   	z-index: 10;
   	top: 0;
   	left: 0;
@@ -42,9 +41,6 @@
 	text-align: left;
 }
 
-#project-form, #idea-form {
-	display: none;
-}
 
 .card {
 	transition: transform .2s; /* Animation */
@@ -52,6 +48,12 @@
 
 .card:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.project_toggle_hide, .idea_toggle_hide, .both_toggle_hide{
+	display: none!important;
+}
+.project_toggle_show, .idea_toggle_show, .both_toggle_show{
+	display: block!important;
 }
 
 /************** New Post Elements ***************/
