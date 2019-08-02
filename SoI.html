@@ -25,6 +25,48 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <style type "text/css">
+/* @group Blink */
+    .blink {
+      -webkit-animation: blink .75s linear infinite;
+      -moz-animation: blink .75s linear infinite;
+      -ms-animation: blink .75s linear infinite;
+      -o-animation: blink .75s linear infinite;
+       animation: blink .75s linear infinite;
+    }
+    @-webkit-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @-moz-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @-ms-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @-o-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    /* @end */
+
+    </style>
     <script>
       (function() {
         var qs,js,q,s,d=document,
@@ -91,6 +133,12 @@
       </div>
 
     </header><!-- SoC Banner -->
+    <h2 class="text-danger text-center mt-5 blink">Summer of Innovation 2019  has ended!</h2>
+    <h5 class="text-muted text-center col-8 mx-auto mt-2 mb-5">
+      We thank you all for your contributions and hope you continue it in the true spirit of open source. 
+      <br>
+      P.S. We will be sending out the goodies soon - might take a month to arrive xP.  
+    </h5>
     <div class="unit-5 banner" style="background: url('SoC19/logo.png'); background-repeat: no-repeat; background-position:
     center; background-size: auto;">
       <div class="container text-center">
@@ -102,7 +150,6 @@
     <div class="site-section">
       <div class="container">
         <div class="text-center">
-          <h2>
             <a class="typeform-share button bg-primary rounded" href="https://oss017117.typeform.com/to/nonJL9" data-mode="popup" style="display:inline-block;text-decoration:none;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
           data-submit-close-delay="5" target="_blank">
               Click here to claim your Swag
