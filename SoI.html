@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="shortcut icon" href="./images/oss_logo.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -24,7 +25,65 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <style type "text/css">
+/* @group Blink */
+    .blink {
+      -webkit-animation: blink .75s linear infinite;
+      -moz-animation: blink .75s linear infinite;
+      -ms-animation: blink .75s linear infinite;
+      -o-animation: blink .75s linear infinite;
+       animation: blink .75s linear infinite;
+    }
+    @-webkit-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @-moz-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @-ms-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @-o-keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 1; }
+      50.01% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    /* @end */
 
+    </style>
+    <script>
+      (function() {
+        var qs,js,q,s,d=document,
+            gi=d.getElementById,
+            ce=d.createElement,
+            gt=d.getElementsByTagName,
+            id="typef_orm_share",
+            b="https://embed.typeform.com/";
+        if(!gi.call(d,id)){
+            js=ce.call(d,"script");
+            js.id=id;
+            js.src=b+"embed.js";
+            q=gt.call(d,"script")[0];
+            q.parentNode.insertBefore(js,q)
+        }
+      })()
+      </script>
   </head>
   <body>
 
@@ -74,7 +133,17 @@
       </div>
 
     </header><!-- SoC Banner -->
-    <div class="unit-5" style="background: url('SoC19/logo.png'); background-repeat: no-repeat; background-position:
+    <h2 class="text-danger text-center mt-5 blink">Summer of Innovation 2019  has ended!</h2>
+    <h5 class="text-muted text-center col-8 mx-auto mt-2 mb-5">
+      We thank you all for your contributions and hope you continue it in the true spirit of open source. 
+      <br>
+      P.S. We will be sending out the goodies soon - might take a month to arrive xP.  
+      <br>
+    </h5>
+    <h5 class="text-danger text-center col-8 mx-auto mt-2 mb-5">
+      Update: Delivery has been delayed due to extreme weather conditions. ETA: Mid-End September
+    </h5>
+    <div class="unit-5 banner" style="background: url('SoC19/logo.png'); background-repeat: no-repeat; background-position:
     center; background-size: auto;">
       <div class="container text-center">
         <h2 style="padding: 140px" class="mb-5"></h2>
@@ -84,6 +153,20 @@
     <!--Start Section Events-->
     <div class="site-section">
       <div class="container">
+        <div class="text-center">
+            <a class="typeform-share button bg-primary rounded" href="https://oss017117.typeform.com/to/nonJL9" data-mode="popup" style="display:inline-block;text-decoration:none;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+          data-submit-close-delay="5" target="_blank">
+              Click here to claim your Swag
+            </a> 
+          </h2>
+          <p><i>Note: The same form is needed to be used by both contributors and mentors.</i></p>
+          <p>
+            <strong>
+              Finally, its time to claim your swag for your contributions in OSS Summer of Innovation '19. Get your PRs merged in case it's less than 3 to be eligible for swags.
+            </strong>
+          </p>
+          <br>
+          </div> 
         <h2>Overview</h2>
         <p>
             Hello everyone! We take pleasure in announcing <strong>Summer of Innovation</strong>, an initiative by the OSS to transform your summer into an innovation extravaganza. As you have guessed it, in this programme, you can select from a number of projects (which can in turn be put up by anyone with a brilliant idea and resolve to pursue it) to work on in the summer. There will be mentors for each project who basically are the people who came up with the idea and a rough draft on how to go about it. <br>
@@ -99,7 +182,7 @@
             <br><br>
         </p>
         <br>
-
+      
         <h2>Timeline</h2>
         <p>
           <strong>Phase 1 - Exploration</strong>: May 1st to May 5th
@@ -164,7 +247,7 @@
           <div class="col-md-6 mb-5 mb-lg-0 col-lg-3 event-card" data-aos="fade">
               <div class="position-relative unit-8">
               <a href="SoC19/pyquotes.html" class="mb-3 d-block img-a"><img src="images/SoC assets/pyquotes.jpg" alt="Image" style="max-width:100%" class="img-fluid rounded"></a>
-              <span class="d-block text-gray-500 text-normal font-weight-bold small mb-3">Mentors <a target="_blank" href="https://github.com/akshatkarani/">akshatkarani</a> <!-- <span class="mx-2">&bullet;</span> March 17th, 2019 --></span>
+              <span class="d-block text-gray-500 text-normal font-weight-bold small mb-3">Mentors <a target="_blank" href="https://github.com/akshatkarani/">akshatkarani</a>, <a target="_blank" href="https://github.com/sunn-e/">sunn-e</a> <!-- <span class="mx-2">&bullet;</span> March 17th, 2019 --></span>
               <h2 class="h5 font-weight-normal line-height-sm mb-3"><a href="SoC19/pyquotes.html" class="text-black"><strong>Py Quotes</strong></a></h2>
               <p><strong>Web scrapper to scrap quotes and build a pip package.</strong> <br><br>Estimated: 8 weeks</p>
               </div>
@@ -236,7 +319,7 @@
         <h2>Prizes</h2>
         <h5 style="text-decoration: underline;">Software</h5>
         <ul>
-          <li>T-Shirts for more than 5 PRs merged (at most one goodfirstissue)</li>
+          <li>T-Shirts on getting minimum 3 PRs merged (at most one goodfirstissue)</li>
           <li>Backpacks for top 3 contributors (based on PRs merged)</li>
           <li>Cheatsheets and stickers for all</li>
           <li>Hoodies for mentors</li>
@@ -286,7 +369,7 @@
                 <div class="text-center">
                   <h3 class="footer-heading mb-4">Follow Us</h3>
                   <span class="unit-3-icon icon" style="margin-left: 5%" >
-                    <a href="https://www.facebook.com/OSS-Open-Student-SoIiety-390468168410308/" target="_blank">
+                    <a href="https://www.facebook.com/OSS-Open-Student-Society-390468168410308/" target="_blank">
                       <img src="images/facebook.png" style="max-width: 20px">
                     </a>
                   </span>
@@ -335,6 +418,11 @@
             Icons made by <a href="https://www.flaticon.com/authors/geotatah" target="_blank" title="geotatah">geotatah</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com </a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
           </p>
           </div>
+        </div>
+      </div>
+      <div class="footer-up-btn">
+        <div>
+          <img src="images/arrow-up.png" alt="up">
         </div>
       </div>
     </footer>
